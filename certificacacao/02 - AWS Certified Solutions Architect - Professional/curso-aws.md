@@ -13,6 +13,8 @@
 >
 ![Exemplo](./images/image.png)
 
+## Sessão 3: Identity Management and Permissions
+
 
 
 
