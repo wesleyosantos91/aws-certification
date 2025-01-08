@@ -3,100 +3,103 @@
 1. **Qual é o objetivo principal da IA generativa?**
 
     **R:** A IA generativa é um tipo de IA que visa criar conteúdo, como imagens, textos, músicas ou    conversas.
-    
+
     **Referência:** [AWS - IA generativa](https://aws.amazon.com/what-is/generative-ai/)
 
 2. **Qual estágio do pipeline de desenvolvimento de modelos concentra-se na avaliação do desempenho do modelo?**
 
-**R:** Na avaliação do modelo, é necessário determinar quão bem um modelo atinge os respectivos objetivos testando o desempenho, o viés e as explicações antes da implantação.
+    **R:** Na avaliação do modelo, é necessário determinar quão bem um modelo atinge os respectivos     objetivos testando o desempenho, o viés e as explicações antes da implantação.
 
-**Referência:** [AWS Well-Architected Framework](https://docs.aws.amazon.com/pt_br/wellarchitected/latest/machine-learning-lens/model-evaluation.html)
+    **Referência:** [AWS Well-Architected Framework](https://docs.aws.amazon.com/pt_br/wellarchitected/ latest/machine-learning-lens/model-evaluation.html)
 
 3. **Quais fatores podem afetar a latência da invocação de um grande modelo de linguagem (LLM)? (Selecione DUAS.)**
-**R:**
-- O número de tokens no prompt de entrada afeta a latência da invocação do LLM.
-- O número de tokens na resposta afeta a latência da invocação do LLM.
 
-**Referência:** [AWS - Latência em LLMs](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/inference.html)
+    **R:**
+    - O número de tokens no prompt de entrada afeta a latência da invocação do LLM.
+    - O número de tokens na resposta afeta a latência da invocação do LLM.
+
+    **Referência:** [AWS - Latência em LLMs](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/    inference.html)
 
 4. **Um especialista em IA está treinando um modelo de ML de regressão e observando o viés e a variância durante o treinamento. Qual padrão de viés e variância resultará no sobreajuste do modelo?**
 
-**R:** O baixo viés indica que o modelo não está fazendo suposições errôneas sobre os dados de treinamento. A alta variância indica que o modelo está prestando atenção ao ruído nos dados de treinamento e está se sobreajustando.
+    **R:** O baixo viés indica que o modelo não está fazendo suposições errôneas sobre os dados de  treinamento. A alta variância indica que o modelo está prestando atenção ao ruído nos dados de   treinamento e está se sobreajustando.
 
-**Referência:** [AWS - Overfitting](https://aws.amazon.com/what-is/overfitting/)
+    **Referência:** [AWS - Overfitting](https://aws.amazon.com/what-is/overfitting/)
 
 5. **Quais são as desvantagens ou limitações de trabalhar com a IA generativa? (Selecione DUAS.)**
-**R:** A alucinação ocorre quando um grande modelo de linguagem (LLM) gera informações falsas.
-Os LLMs são pré-treinados em conjuntos de dados estáticos, resultando em uma limitação de dados.
 
-**Referência:**
-- AWS - [Alucinações na IA generativa](https://docs.aws.amazon.com/pt_br/amazonq/latest/qbusiness-ug/concepts-terms.html)
-- AWS - [RAG e limitação de dados](https://aws.amazon.com/what-is/retrieval-augmented-generation/)
+    **R:** A alucinação ocorre quando um grande modelo de linguagem (LLM) gera informações falsas.
+    Os LLMs são pré-treinados em conjuntos de dados estáticos, resultando em uma limitação de dados.
+
+    **Referência:**
+    - AWS - [Alucinações na IA generativa](https://docs.aws.amazon.com/pt_br/amazonq/latest/    qbusiness-ug/concepts-terms.html)
+    - AWS - [RAG e limitação de dados](https://aws.amazon.com/what-is/retrieval-augmented-generation/)
 
 6. **Qual métrica pode avaliar o desempenho do modelo de base (FM) no contexto de resumo de texto?**
 
-**R:** ROUGE-N é uma métrica que pode avaliar a qualidade dos resumos de texto comparando sobreposições de n-gramas entre o resumo gerado e os resumos de referência.
+    **R:** ROUGE-N é uma métrica que pode avaliar a qualidade dos resumos de texto comparando   sobreposições de n-gramas entre o resumo gerado e os resumos de referência.
 
-**Referência:** [AWS - Métricas de resumo](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-foundation-model-evaluate-overview.html)
+    **Referência:** [AWS - Métricas de resumo](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/   clarify-foundation-model-evaluate-overview.html)
 
 7. **Qual técnica melhorará de maneira mais confiável o desempenho do FM para resolver problemas matemáticos passo a passo?**
 
-**R:** A técnica de "cadeia de pensamento" (Chain of Thought) divide uma questão complexa em partes menores, permitindo ao modelo raciocinar e fornecer explicações claras.
+    **R:** A técnica de "cadeia de pensamento" (Chain of Thought) divide uma questão complexa em partes     menores, permitindo ao modelo raciocinar e fornecer explicações claras.
 
-**Referência:** [AWS - Cadeia de pensamento](https://aws.amazon.com/what-is/prompt-engineering/)
+    **Referência:** [AWS - Cadeia de pensamento](https://aws.amazon.com/what-is/prompt-engineering/)
 
 8. **Um desenvolvedor precisa de uma solução para criar um assistente virtual baseado em linguagem natural. Qual serviço da AWS atenderá a esses requisitos?**
 
-**R:** O Amazon Lex é um serviço gerenciado que pode ser usado para criar bots usando IA conversacional.
+    **R:** O Amazon Lex é um serviço gerenciado que pode ser usado para criar bots usando IA    conversacional.
 
-**Referência:** [AWS - Amazon Lex](https://docs.aws.amazon.com/pt_br/lexv2/latest/dg/what-is.html)
+    **Referência:** [AWS - Amazon Lex](https://docs.aws.amazon.com/pt_br/lexv2/latest/dg/what-is.html)
 
 9. **Qual técnica ajuda a mitigar alucinações em grandes modelos de linguagem (LLM)? (Selecione DUAS.)**
-**R:**
-- Usar soluções de RAG (Recuperação Aumentada) para enriquecer o prompt com informações confiáveis.
-- Criar prompts claros com instruções precisas.
 
-**Referência:**
-- [AWS - RAG](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html)
-- [AWS - Engenharia de prompts](https://aws.amazon.com/what-is/prompt-engineering/)
+    **R:**
+    - Usar soluções de RAG (Recuperação Aumentada) para enriquecer o prompt com informações confiáveis.
+    - Criar prompts claros com instruções precisas.
+
+    **Referência:**
+    - [AWS - RAG](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/    jumpstart-foundation-models-customize-rag.html)
+    - [AWS - Engenharia de prompts](https://aws.amazon.com/what-is/prompt-engineering/)
 
 10. **Qual é o propósito de usar incorporações em um modelo de geração de texto?**
 
-**R:** As incorporações são representações vetoriais que capturam relações semânticas, permitindo ao modelo entender e gerar textos coerentes.
+    **R:** As incorporações são representações vetoriais que capturam relações semânticas, permitindo   ao modelo entender e gerar textos coerentes.
 
-**Referência:** [AWS - Incorporações em IA](https://aws.amazon.com/what-is/transformers-in-artificial-intelligence/)
+    **Referência:** [AWS - Incorporações em IA](https://aws.amazon.com/what-is/ transformers-in-artificial-intelligence/)
 
 11. **Qual métrica a empresa deve usar para avaliar um modelo de chatbot baseado em semelhança com especialistas humanos?**
 
-**R:** BERTScore mede a similaridade semântica entre respostas geradas e respostas de referência.
+    **R:** BERTScore mede a similaridade semântica entre respostas geradas e respostas de referência.
 
-**Referência:** [AWS - Métricas de avaliação](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-foundation-model-evaluate-overview.html)
+    **Referência:** [AWS - Métricas de avaliação](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/    clarify-foundation-model-evaluate-overview.html)
 
 12. **Quais estratégias fazem parte do design centrado no ser humano para IA usando RLHF? (Selecione DUAS.)**
 
-**R:**
-- Ajuste fino supervisionado de modelos de linguagem.
-- Uso de modelos de recompensas baseados em feedback humano.
+    **R:**
+    - Ajuste fino supervisionado de modelos de linguagem.
+    - Uso de modelos de recompensas baseados em feedback humano.
 
-**Referência:** [AWS - RLHF](https://aws.amazon.com/what-is/reinforcement-learning-from-human-feedback/)
+    **Referência:** [AWS - RLHF](https://aws.amazon.com/what-is/ reinforcement-learning-from-human-feedback/)
 
 13. **Um engenheiro de ML quer aprimorar o desempenho de um LLM com o menor custo. Qual técnica deve ser priorizada?**
 
-**R:** A engenharia de prompts é a técnica mais econômica, pois não requer infraestrutura adicional e ajusta a entrada para melhorar as respostas.
+    **R:** A engenharia de prompts é a técnica mais econômica, pois não requer infraestrutura adicional     e ajusta a entrada para melhorar as respostas.
 
-**Referência:** [AWS - Engenharia de prompts](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/what-is-prompt-engineering.html)
+    **Referência:** [AWS - Engenharia de prompts](https://docs.aws.amazon.com/pt_br/bedrock/latest/ userguide/what-is-prompt-engineering.html)
 
 14. **Uma empresa quer treinar um modelo de IA que minimiza alucinações com base em sua própria documentação. Qual solução atende a esses requisitos?**
 
-**R:** RAG (Recuperação Aumentada) reduz alucinações ao enriquecer os prompts com informações específicas e confiáveis da empresa.
+    **R:** RAG (Recuperação Aumentada) reduz alucinações ao enriquecer os prompts com informações   específicas e confiáveis da empresa.
 
-**Referência:** [AWS - RAG](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html)
+    **Referência:** [AWS - RAG](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/  jumpstart-foundation-models-customize-rag.html)
 
 15. **Qual é o objetivo principal de um modelo de prompt na engenharia de prompts?**
 
-**R:** Os modelos de prompt padronizam entradas e saídas de IA, garantindo consistência e melhorando o desempenho do modelo.
-
-**Referência:** [AWS - Modelos de prompt](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/prompt-templates-and-examples.html)
+    **R:** Os modelos de prompt padronizam entradas e saídas de IA, garantindo consistência e   melhorando o desempenho do modelo.
+    
+    **Referência:** [AWS - Modelos de prompt](https://docs.aws.amazon.com/pt_br/bedrock/latest/ userguide/prompt-templates-and-examples.html)
 
 # Domínio 2: Fundamentos de IA generativa
 
