@@ -2,9 +2,9 @@
 
 1. **Qual é o objetivo principal da IA generativa?**
 
-**R:** A IA generativa é um tipo de IA que visa criar conteúdo, como imagens, textos, músicas ou conversas.
-
-**Referência:** [AWS - IA generativa](https://aws.amazon.com/what-is/generative-ai/)
+    **R:** A IA generativa é um tipo de IA que visa criar conteúdo, como imagens, textos, músicas ou    conversas.
+    
+    **Referência:** [AWS - IA generativa](https://aws.amazon.com/what-is/generative-ai/)
 
 2. **Qual estágio do pipeline de desenvolvimento de modelos concentra-se na avaliação do desempenho do modelo?**
 
