@@ -1,0 +1,581 @@
+Que tipo de ataque de injeção de prompts envolve solicitar a um grande modelo de linguagem (LLM) que não siga suas instruções estruturadas e forneça informações sobre um tópico proibido ou prejudicial?
+
+R: Correto. O formato de ataque “ignorar o modelo de prompt” solicita que um modelo, por meio de um modelo de prompt, ignore suas instruções. Ao instruir o modelo a ignorar seu modelo de prompt, um usuário pode instruir o LLM a fornecer resultados sobre um tópico proibido ou prejudicial.
+
+Referencia: https://docs.aws.amazon.com/pt_br/prescriptive-guidance/latest/llm-prompt-engineering-best-practices/common-attacks.html
+
+===================================================================================================================================
+
+Recentemente, uma empresa de dispositivos médicos adicionou visões gerais de produtos geradas por IA ao seu catálogo de produtos on-line. A empresa quer incorporar a terminologia específica do setor para melhorar os resultados gerados. Uma equipe de ML tem acesso a um grande volume de padrões e pesquisas não rotulados específicos do setor.
+
+Qual técnica de ML atenderá a esses requisitos?
+
+R: Correto. O pré-treinamento contínuo de FMs pode ajudar o modelo a entender a terminologia específica do setor. Você pode usar grandes conjuntos de dados não rotulados para realizar um pré-treinamento contínuo. Você pode continuar o pré-treinamento do FM usando o conjunto de dados não rotulados do setor. As respostas futuras do modelo personalizado resultante incorporarão de maneira mais consistente a terminologia do conjunto de dados do setor.
+
+Referencia: https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/custom-models.html
+
+===================================================================================================================================
+Uma empresa quer criar um assistente virtual para atender às consultas dos clientes. O assistente virtual fornecerá respostas em linguagem natural. As respostas serão baseadas em documentos armazenados no Amazon S3. A empresa quer usar um serviço gerenciado. Ela não quer configurar parâmetros para modelos, incorporações, recursos conversacionais ou armazenamentos de vetores.
+
+Qual solução atenderá a esses requisitos da maneira MAIS eficiente em termos operacionais?
+
+R: Correto. O Amazon Q Business é um assistente totalmente gerenciado que usa IA generativa. Você pode personalizar o Amazon Q Business para responder a consultas, fornecer resumos, criar conteúdo e executar tarefas usando seus próprios dados. Você pode usar o Amazon Q Business para criar uma solução de geração aumentada de recuperação (RAG) que responda às perguntas dos clientes. Você não precisa fazer seleções de modelo nem configurar parâmetros de modelo ao usar o Amazon Q Business. Além disso, você não precisa selecionar os detalhes técnicos de ingestão de dados do Amazon S3, como propriedades de fragmentação ou incorporação.
+
+Referencia: https://docs.aws.amazon.com/pt_br/amazonq/latest/qbusiness-ug/what-is.html
+===================================================================================================================================
+Uma empresa de serviços de saúde está desenvolvendo seu próprio algoritmo de ML para treinar um modelo e prever resultados de saúde com base em dados genéticos. A empresa passa por auditorias de conformidade que exigem transparência no treinamento e desempenho do modelo.
+
+Quais serviços ou recursos da AWS atenderão a esses requisitos? (Selecione DUAS.)
+
+R: Correto. O SageMaker Clarify fornece informações sobre vieses e a importância dos recursos. Você pode usar o SageMaker Clarify para produzir parâmetros de referência e relatórios para respaldar as auditorias.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-configure-processing-jobs.html#clarify-fairness-and-explainability
+
+R: Correto. Você pode usar os SageMaker Model Cards para documentar informações em todo o ciclo de vida do modelo. Por exemplo, você pode usar os SageMaker Model Cards para registrar usos pretendidos, classificações de risco, detalhes de treinamento, métricas de avaliação e informações de desempenho. Os SageMaker Model Cards podem preencher automaticamente as informações de treinamento dos modelos treinados no SageMaker. As edições são monitoradas nas novas versões do modelo. Você pode exportar cartões de modelos e usá-los para compartilhar com os stakeholders ou respaldar auditorias de conformidade.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/model-cards.html
+
+===================================================================================================================================
+Qual é o objetivo principal da IA generativa?
+
+R: Correto. A IA generativa é um tipo de IA que visa criar conteúdo, como imagens, textos, músicas ou conversas.
+
+Referencia: https://aws.amazon.com/what-is/generative-ai/
+===================================================================================================================================
+Uma empresa de manufatura quer criar um assistente virtual para funcionários internos. O assistente virtual deve responder a perguntas técnicas com base apenas na documentação de engenharia proprietária da empresa. A empresa quer minimizar as alucinações dos modelos. Ela quer reduzir os esforços associados à preparação de dados.
+
+Qual solução atende a esses requisitos pelo MENOR custo operacional indireto?
+
+R: Correto. Você pode usar a RAG para pesquisar documentos proprietários da empresa, recuperar resultados relevantes e usá-los como contexto para a tarefa de geração de texto. A tarefa de geração de texto utilizará as informações contextuais específicas da empresa como base. As soluções de RAG reduzem as alucinações e fornecem respostas fundamentadas por meio do processo de recuperação. A RAG exige custos operacionais indiretos menores para preparar o conjunto de dados em comparação com o ajuste fino ou o treinamento do modelo. Essa solução atende ao requisito de aplicar respostas baseadas na documentação de engenharia da empresa.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html
+===================================================================================================================================
+Uma empresa quer desenvolver uma solução interna que resuma vários e-mails e extensas notas de reunião. Ela quer usar modelos de base (FMs) no Amazon Bedrock para a solução.
+
+Qual propriedade do modelo deve ser considerada PRIMEIRO ao escolher um modelo?
+
+R: Correto. A janela de contexto é uma propriedade do modelo que descreve o número de tokens que ele pode aceitar no contexto. Nessa situação, o modelo precisa ler e resumir uma quantidade significativa de texto. Portanto, você deve considerar os limites de tamanho de contexto (janela de contexto) antes de escolher um modelo.
+
+Referencia: 
+- https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/models-supported.html
+- https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/models-regions.html
+- https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/inference-parameters.html
+===================================================================================================================================
+Uma empresa quer usar um grande modelo de linguagem (LLM) para aprender a linguagem específica de seu domínio. Ela tem uma grande quantidade de dados não rotulados que contêm linguagem específica do domínio.
+
+Qual solução atende a esses requisitos pelo MENOR custo operacional indireto?
+ 
+R: Correto. O pré-treinamento contínuo melhora o desempenho de um modelo ao fornecer dados não rotulados para que o modelo possa aprender conhecimentos de um domínio específico. Essa solução treina o modelo com base nos dados da empresa. Depois, o modelo pode responder com uma linguagem específica do domínio da empresa.
+
+Referencia: https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/custom-models.html
+===================================================================================================================================
+Uma empresa tem um grande repositório de documentos PDF. Cada documento contém várias imagens, diagramas e tabelas digitalizadas relacionadas a operações comerciais. A empresa quer criar um sistema de pesquisa semântica para fornecer recuperação rápida de imagens com base em conteúdo e contexto. A solução deve analisar imagens para extrair conteúdo e identificar objetos. A empresa não quer se basear em nomes de arquivos ou marcação manual.
+
+Qual combinação de serviços da AWS atenderá a esses requisitos pelo MENOR custo operacional indireto? (Selecione DUAS.)
+
+
+R: Correto. O Amazon Textract é um serviço gerenciado que você pode usar para extrair texto de imagens e PDFs. Em seguida, você pode indexar e pesquisar o conteúdo textual. Como o Amazon Textract é um serviço gerenciado, você não precisa gerenciar a infraestrutura subjacente. Portanto, essa solução exige uma custo operacional indireto mínimo.
+
+Referencia: https://docs.aws.amazon.com/pt_br/textract/latest/dg/what-is.html
+
+R: Correto. O Amazon Rekognition é um serviço gerenciado que fornece análise de imagens e vídeos. Você pode usar o Amazon Rekognition para analisar imagens e detectar objetos, cenas e outros dados relevantes. Você pode usar o Amazon Rekognition para aprimorar os recursos de compreensão de imagens. Como o Amazon Rekognition é um serviço gerenciado, você não precisa gerenciar a infraestrutura subjacente. Portanto, essa solução exige uma custo operacional indireto mínimo.
+
+Referencia: https://docs.aws.amazon.com/pt_br/rekognition/latest/dg/what-is.html
+===================================================================================================================================
+Um desenvolvedor precisa de uma solução de moderação de conteúdo para um caso de uso que envolve pinturas, esboços e animações.
+
+Qual solução atende a esses requisitos pelo MENOR custo operacional indireto?
+
+
+R:  Incorreto. O Amazon Bedrock é um serviço totalmente gerenciado que fornece acesso a modelos de base (FMs) de alto desempenho e a um conjunto de ferramentas para personalizar, avaliar e proteger os FMs. Ele fornece acesso a modelos de incorporação multimodais, como a família de modelos do Amazon Titan. É possível ajustar os modelos do Amazon Titan para fins de moderação de conteúdo. O ajuste fino de um modelo no Amazon Bedrock exigiria que você fornecesse um conjunto de dados rotulados. Essa solução exigiria custos operacionais indiretos adicionais para ajustar um modelo de uso geral.
+
+Referencia:
+
+- https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/what-is-bedrock.html
+- https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/titan-multiemb-models.html
+===================================================================================================================================
+Uma empresa quer criar um chatbot que possa interagir com os clientes usando linguagem natural. Ela quer implementar uma solução gerenciada.
+
+Qual serviço da AWS atende a esses requisitos?
+
+R: Correto. O Amazon Lex é um serviço gerenciado que pode ser usado para criar bots usando IA conversacional. Ele não exige nenhuma codificação personalizada e está pronto para uso.
+
+Referencia: https://docs.aws.amazon.com/pt_br/lexv2/latest/dg/what-is.html
+===================================================================================================================================
+Uma empresa quer implantar um modelo de IA para detectar transações fraudulentas. Antes de lançar o modelo, a empresa precisa testar o desempenho do modelo.
+
+Qual estágio do pipeline de desenvolvimento de modelos concentra-se na avaliação do desempenho do modelo?
+
+R: Correto. Na avaliação do modelo, é necessário determinar quão bem um modelo atinge os respectivos objetivos testando o desempenho, o viés e as explicações antes da implantação. Portanto, o estágio de avaliação do modelo atende aos requisitos. Você executa esse estágio para validar o modelo antes do lançamento.
+
+Referencia: https://docs.aws.amazon.com/pt_br/wellarchitected/latest/machine-learning-lens/model-evaluation.html
+
+===================================================================================================================================
+Um cientista de dados está criando um modelo de ML para prever o volume anual de vendas de um produto específico que é vendido por uma empresa.
+
+Quais métricas de avaliação do modelo atenderão a esse requisito? (Selecione DUAS.)
+
+R: Correto. MAPE é a média das diferenças absolutas entre os valores reais e os previstos, dividida pelos valores reais. Você pode usar o MAPE em previsões numéricas para entender os erros de previsão do modelo. Você pode usar o MAPE para prever o volume anual de vendas de um produto específico.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/canvas-metrics.html
+
+R: Correto. O MAE mede quão diferentes são os valores previstos e reais quando se calcula a média entre todos os valores. Você pode usar o MAE em previsões numéricas para entender os erros de previsão do modelo. Você pode usar o MAE para prever o volume anual de vendas de um produto específico.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/canvas-metrics.html
+===================================================================================================================================
+Recentemente, uma empresa começou a desenvolver soluções de ML usando o Amazon SageMaker. Ela não tem funcionários qualificados para escrever scripts de atividades de limpeza e preparação de dados.
+
+Qual recurso do SageMaker a empresa pode usar na limpeza e preparação de dados com requisitos MÍNIMOS para escrever scripts?
+
+
+R:  Correto. É possível usar o SageMaker Data Wrangler para importar, limpar, analisar e transformar dados. Ele tem uma interface de usuário gráfica e é uma solução de pouco ou nenhum código (LCNC) para limpeza e preparação de dados.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/data-wrangler.html
+===================================================================================================================================
+Na lista a seguir, selecione a etapa correta do Amazon SageMaker Pipelines para cada tarefa. Cada etapa do SageMaker Pipelines deve ser selecionada uma única vez. (Selecione QUATRO.)
+
+ClarifyCheck
+Processamento
+Treinamento
+Ajuste
+
+
+Desenvolver um modelo. 
+R: Treinamento
+
+Identificar vieses no modelo.  
+R: ClarifyCheck 
+
+Otimizar hiperparâmetros. 
+R: Ajuste 
+
+Aplicar a engenharia de recursos. 
+R:  Processamento
+
+R: O SageMaker Pipelines é uma ferramenta capaz de criar pipelines de ML completos. Os pipelines são compostos de etapas, as quais definem as ações que o pipeline deve executar. A etapa ClarifyCheck baseia-se no SageMaker Clarify. É possível usar essa etapa para conduzir verificações de desvios de referência para análise de vieses e explicabilidade do modelo. A etapa de processamento pode ser usada para executar o pré-processamento de dados, também conhecido como engenharia de atributos. Você pode usar a etapa de treinamento para treinar um modelo. A etapa de ajuste pode ser usada para criar um trabalho de ajuste de hiperparâmetros, o qual executa vários trabalhos de treinamento, cada um produzindo uma versão do modelo.
+
+Referencia:
+
+- https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/pipelines.html
+- https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/build-and-manage-steps.html
+===================================================================================================================================
+Um data scientist está criando um modelo de IA para prever volumes de vendas com base em um conjunto de dados de mercado. Depois de ingerir os dados, ele quer determinar quais parâmetros de mercado afetariam mais o volume de vendas. Em seguida, ele deseja incorporar os parâmetros ao modelo.
+
+Qual etapa do ciclo de vida de ML isso descreve?
+
+R: Correto. A seleção de atributos envolve a escolha de atributos ou variáveis de dados durante o desenvolvimento de um modelo preditivo. É nesse estágio do ciclo de vida de ML que você incorpora parâmetros ao modelo.
+
+Referencia: https://aws.amazon.com/pt/health/healthcare/solutions/analytics-ml/
+===================================================================================================================================
+Um engenheiro de ML implantou um modelo de base (FM) e percebeu que o formato da resposta do FM precisa ser aprimorado. Ele quer implementar uma técnica para melhorar o formato das respostas do FM.
+
+Qual solução atenderá a esses requisitos da maneira MAIS econômica?
+
+R: Correto. A engenharia de prompts é uma técnica para criar prompts de modo a ajudar um FM a melhorar o formato das respostas. Essa técnica não requer nenhum recurso adicional. Portanto, essa é a solução mais econômica para melhorar o formato das respostas. Além disso, essa técnica é recomendada como a primeira etapa para tentar melhorar o formato das respostas do FM.
+
+Referencia: https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/what-is-prompt-engineering.html
+===================================================================================================================================
+Uma empresa quer usar o Amazon Bedrock para criar rascunhos de documentos.
+
+Qual é o PRIMEIRO passo que a empresa deve dar?
+
+
+R: Correto. FM é um modelo de IA que já tem vários parâmetros e já foi treinado em grandes quantidades de dados. Você pode usar um FM em diversos casos de uso. A primeira etapa é selecionar o FM mais adequado para o caso de uso. Nessa situação, você selecionaria um FM para gerar texto.
+
+Referencia: https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/key-definitions.html
+===================================================================================================================================
+Um data scientist está trabalhando em um modelo de geração de texto que usa incorporações para representar o conteúdo como vetores.
+
+Qual é o propósito de usar incorporações nesse contexto?
+
+R: Correto. As incorporações são representações vetoriais de conteúdo que capturam relações semânticas. Elas fornecem conteúdo com significados semelhantes para ter representações vetoriais próximas. Além disso, as incorporações são um componente crucial dos modelos de geração de texto. Elas permitem que o modelo entenda e gere textos coerentes e significativos.
+
+Referencia: https://aws.amazon.com/what-is/transformers-in-artificial-intelligence/#seo-faq-pairs#what-are-the-components-of-transformer-architecture
+===================================================================================================================================
+Um data scientist invocou um modelo de incorporação usando a frase “o filme foi muito bom”.
+
+Qual é a saída do modelo?
+
+R: Correto. Um modelo de incorporação gera uma representação numérica do texto. A saída é uma matriz de valores numéricos.
+
+Referencia:
+- https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/titan-multiemb-models.html
+- https://aws.amazon.com/what-is/embeddings-in-machine-learning/
+===================================================================================================================================
+Quais fatores podem afetar a latência da invocação de um grande modelo de linguagem (LLM)? (Selecione DUAS.)
+
+
+R: Correto. Quanto maior o prompt de entrada, maior o processamento exigido pelo LLM para gerar o primeiro token. O número de tokens no prompt de entrada afeta a latência da invocação do LLM.
+
+Referencia: https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/inference.html
+
+R: Correto. Os LLMs geram um token de saída por vez. Portanto, cada token indica que o LLM precisa ser invocado novamente. O número de tokens na resposta afeta a latência da invocação do LLM.
+
+Referencia: https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/inference.html
+===================================================================================================================================
+Na lista a seguir, selecione o tipo de modelo de ML correto para cada caso de uso. Cada tipo de modelo de ML deve ser selecionado uma ou mais vezes. (Selecione QUATRO.)
+
+Modelo de ML tradicional
+Modelo de IA generativa
+
+
+Desenvolver um grande repositório de patentes de traduções do inglês para o francês que inclua processamento de imagem.
+R: Modelo de IA generativa
+
+Prever a taxa de rotatividade de clientes para uma empresa de telecomunicações.
+R: Modelo de ML tradicional
+
+Criar imagens ou vídeos exclusivos e realistas com base em prompts de texto e descrições para campanhas de publicidade e de marketing.
+R: Modelo de IA generativa
+
+Criar uma aplicação de análise de sentimentos nos textos.
+R: Modelo de ML tradicional
+
+Referencia: Geralmente, é possível dividir a maior parte das aplicações de IA em modelos de ML tradicionais e em modelos de IA generativa. O desempenho de ambas as categorias depende de grandes quantidades de dados. Os algoritmos de base então enraizados em frameworks de aprendizado profundo. O framework mais comum é a modelagem discriminativa, que envolve a previsão ou classificação de uma variável de destino. Você usaria um modelo de ML tradicional para prever a taxa de rotatividade de clientes e criar uma aplicação de análise de sentimentos no texto.
+
+Os resultados da IA generativa normalmente são dados novos. Os grandes modelos de linguagem (LLMs) baseados em transformadores são redes neurais que processam todas as observações de uma vez. Os LLMs baseados em transformadores não processam observações em processos gradativos. O poder criativo de um LLM gera algo novo com base em conjuntos de probabilidades que são processados com o atributo de entrada do conjunto de dados subjacente. Os modelos baseados em transformadores com frequência são chamados de modelos de base (FMs). A criação de um grande repositório de patentes de traduções do inglês para o francês é um exemplo de LLM baseado em transformadores ou de modelo de IA generativa. A criação de imagens exclusivas e realistas com base em prompts é um caso de uso para um modelo de IA generativa; por exemplo, um modelo de difusão.
+
+- https://aws.amazon.com/what-is/generative-ai/
+===================================================================================================================================
+Quais são as desvantagens ou limitações de trabalhar com a IA generativa? (Selecione DUAS.)
+
+
+R: Correto. A alucinação ocorre quando um grande modelo de linguagem (LLM) gera informações falsas. A resposta normalmente parece correta, então o usuário pode ser enganado. A alucinação é uma limitação do trabalho com IA generativa.
+
+Referencia: https://docs.aws.amazon.com/pt_br/amazonq/latest/qbusiness-ug/concepts-terms.html
+
+R: Correto. Os grandes modelos de linguagem (LLMs) são pré-treinados em conjuntos de dados estáticos em que os dados têm um limite. Portanto, o conhecimento aprendido tem uma limitação de dados.
+
+Referencia: https://aws.amazon.com/what-is/retrieval-augmented-generation/
+===================================================================================================================================
+Estudo de caso: 6 perguntas
+
+Uma empresa está explorando modelos de base (FMs) de IA generativa para criar uma solução baseada em texto de um domínio específico. A solução será usada internamente para gerar publicações de blog e conteúdo de marketing que serão publicados no site externo da empresa.
+
+R: Correto. Uma desvantagem de usar a IA generativa é a possibilidade de gerar conteúdo impreciso. Modelos que não são ajustados ou treinados com dados ou tarefas específicos podem produzir informações enganosas ou imprecisas. Portanto, um FM de IA generativa tem o potencial de gerar publicações de blog imprecisas ou enganosas caso não seja devidamente ajustado ou adaptado para domínios específicos.
+
+Referencia: https://d1.awsstatic.com/legal/ai-responsible-ai-policy/AWS_Responsible_AI_Policy_2023.09.28_PT-BR.pdf
+===================================================================================================================================
+Estudo de caso: 6 perguntas
+
+Uma empresa está explorando modelos de base (FMs) de IA generativa para criar uma solução baseada em texto de um domínio específico. A solução será usada internamente para gerar publicações de blog e conteúdo de marketing que serão publicados no site externo da empresa.
+ 
+R: Correto. O Amazon Bedrock é um serviço totalmente gerenciado que fornece FMs para muitos casos de uso. É possível usá-lo para escolher e personalizar FMs.
+
+Referencia: https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/what-is-bedrock.html
+===================================================================================================================================
+Estudo de caso: 6 perguntas
+
+Uma empresa está explorando modelos de base (FMs) de IA generativa para criar uma solução baseada em texto de um domínio específico. A solução será usada internamente para gerar publicações de blog e conteúdo de marketing que serão publicados no site externo da empresa.
+
+R: Correto. O ajuste fino de adaptação de domínios é um método que pode ser usado para personalizar um FM pré-treinado ajustando o modelo a uma tarefa específica ou a informações específicas do domínio. É possível usar esse método para melhorar o desempenho de um FM ajustando o modelo à terminologia específica do setor.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-fine-tuning-domain-adaptation.html
+===================================================================================================================================
+Estudo de caso: 6 perguntas
+
+Uma empresa está explorando modelos de base (FMs) de IA generativa para criar uma solução baseada em texto de um domínio específico. A solução será usada internamente para gerar publicações de blog e conteúdo de marketing que serão publicados no site externo da empresa.
+
+R: Correto. É possível incorporar a análise humana do conteúdo gerado por um FM de IA generativa. Incorporar a avaliação humana para avaliar a qualidade do conteúdo gerado pode ajudar a garantir a precisão do conteúdo antes que ele seja publicado on-line.
+
+Referencia: https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/what-is-bedrock.html
+===================================================================================================================================
+Estudo de caso: 6 perguntas
+
+Uma empresa está explorando modelos de base (FMs) de IA generativa para criar uma solução baseada em texto de um domínio específico. A solução será usada internamente para gerar publicações de blog e conteúdo de marketing que serão publicados no site externo da empresa.
+
+R: Correto. A violação de PI ocorre quando o conteúdo gerado é semelhante a um material protegido por direitos autorais que já foi publicado. A violação de PI é um risco quando você usa IA generativa para gerar conteúdo on-line e para publicações de blog. Os FMs de IA generativa são treinados em vastos conjuntos de dados que podem incluir material protegido por direitos autorais.
+
+Referencia: https://aws.amazon.com/pt/bedrock/faqs/#product-faqs#bedrock-faqs#responsible-ai
+===================================================================================================================================
+Estudo de caso: 6 perguntas
+
+Uma empresa está explorando modelos de base (FMs) de IA generativa para criar uma solução baseada em texto de um domínio específico. A solução será usada internamente para gerar publicações de blog e conteúdo de marketing que serão publicados no site externo da empresa.
+
+R:  Correto. A Matriz de Escopos de Segurança da IA Generativa é um framework que pode ser usado para classificar casos de uso de IA generativa. É possível usar o framework para determinar o nível de propriedade necessário para um caso de uso e priorizar questões de segurança.
+
+Referencia: https://docs.aws.amazon.com/pt_br/prescriptive-guidance/latest/security-reference-architecture/generative-ai.html
+===================================================================================================================================
+Quais estratégias ajudam a mitigar alucinações nas respostas geradas por um grande modelo de linguagem (LLM)? (Selecione DUAS.)
+
+R: Correto. As soluções de RAG podem reduzir as alucinações ao enriquecer o prompt com informações contextuais que são recuperadas de uma fonte de dados confiável.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html
+
+R: Correto. Instruções claras são importantes quando você elabora um prompt. É possível ajudar a reduzir as alucinações orientando a fase de geração com instruções assertivas que esclareçam o comportamento esperado diante de incertezas.
+
+Referencia: https://aws.amazon.com/what-is/prompt-engineering/
+===================================================================================================================================
+Um desenvolvedor está criando um aplicativo web para os apresentadores de podcast resumirem episódios de podcast. Primeiro, os apresentadores de podcast deverão fazer upload das transcrições das gravações de podcast no aplicativo web. Em seguida, eles receberão um e-mail com um resumo de dois parágrafos dos episódios. Eles usarão os resumos para promover o material nas redes sociais.
+
+Qual serviço da AWS atenderá a esses requisitos?
+
+R: Correto. O Amazon Bedrock fornece acesso sem servidor a modelos de base (FMs) e a vários recursos de IA generativa, como agentes e bases de conhecimento. Há vários FMs disponíveis no Amazon Bedrock que você pode usar para resumir texto.
+
+Referencia: https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/what-is-bedrock.html
+===================================================================================================================================
+Um representante de vendas armazena contratos de clientes em formato PDF em um bucket do Amazon S3. Ele precisa de uma solução para resumir o conteúdo dos documentos e responder a perguntas com base nas informações contidas nos documentos. Ele não tem experiência em codificação.
+
+Qual serviço da AWS atenderá a esses requisitos?
+
+R: Correto. Você pode usar o SageMaker Canvas para criar soluções de ML sem a necessidade de escrever código. O SageMaker Canvas fornece modelos de base (FMs) de IA generativa que você pode usar para iniciar chats conversacionais ou executar análises em dados de texto, como resumo de texto. Nessa situação, você pode usar um modelo do SageMaker Canvas pronto para uso. Você pode integrar o modelo do SageMaker Canvas a serviços como Amazon Textract, Amazon Rekognition e Amazon Comprehend. Após a integração dos serviços, você pode extrair dados dos documentos PDF e analisar o respectivo conteúdo.
+
+Referencia:
+- https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/canvas-ready-to-use-models.html
+- https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/canvas-fm-chat.html
+===================================================================================================================================
+Uma empresa de notícias quer aumentar sua taxa de cliques fornecendo as notícias mais relevantes a cada assinante.
+
+Qual serviço da AWS atende a esses requisitos pelo MENOR custo operacional indireto?
+
+R: Correto. O Amazon Personalize é um serviço de IA totalmente gerenciado que usa dados para gerar recomendações de itens para usuários. É possível usá-lo para fornecer as notícias mais relevantes a cada assinante. O Amazon Personalize foi desenvolvido especificamente para esse tipo de caso de uso. É possível acessar o serviço diretamente por meio de uma API. Portanto, o Amazon Personalize oferece o menor custo operacional indireto.
+
+Referencia: https://docs.aws.amazon.com/pt_br/personalize/latest/dg/what-is-personalize.html
+===================================================================================================================================
+Uma empresa precisa de um sistema de banco de dados relacional para armazenar vetores de incorporação relacionados a transações em tempo real.
+
+Qual serviço da AWS atenderá a esses requisitos?
+
+R: Correto. O Amazon RDS é um serviço de banco de dados relacional compatível com o PostgreSQL, um banco de dados relacional de código aberto. Você pode usar a extensão pgvector para habilitar o armazenamento de vetores de incorporação. Você pode usar o RDS para PostgreSQL para armazenar vetores de incorporação para transações em tempo real.
+
+Referencia: https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html
+===================================================================================================================================
+Um arquiteto de nuvem está criando um mecanismo de recomendação para o site de uma empresa de comércio eletrônico. A empresa usa incorporações de vetores para avaliar a semelhança entre os produtos. A solução precisa armazenar milhões de incorporações de vetores e atender a consultas de similaridade em tempo real com baixa latência.
+
+Quais serviços da AWS atenderão a esses requisitos? (Selecione DUAS.)
+
+R: Correto. O Amazon DocumentDB é um banco de dados de documentos JSON nativo e totalmente gerenciado. Você pode usar o Amazon DocumentDB para operar cargas de trabalho de documentos essenciais em grande escala, sem a necessidade de gerenciar a infraestrutura. O Amazon DocumentDB suporta pesquisa vetorial. Você pode usar a pesquisa vetorial para armazenar, indexar e pesquisar milhões de vetores com tempos de resposta de milissegundos. O Amazon DocumentDB pode realizar consultas de similaridade em tempo real com baixa latência.
+
+Referencia: https://docs.aws.amazon.com/pt_br/documentdb/latest/developerguide/vector-search.html
+
+R: Correto. O OpenSearch Service é um serviço totalmente gerenciado que você pode usar para implantar, escalar e operar o OpenSearch na AWS. Você pode usar os recursos de banco de dados de vetores do OpenSearch Service para várias finalidades. Por exemplo, você pode implementar pesquisa semântica, geração aumentada de recuperação (RAG) com grandes modelos de linguagem (LLMs), mecanismos de recomendação e pesquisas multimídia. O OpenSearch Service suporta armazenamento de incorporações de vetores para recursos de pesquisa por similaridade com baixa latência. O OpenSearch Service também pode ser escalado para armazenar milhões de incorporações e pode oferecer alto throughput de consulta.
+
+Referencia: https://docs.aws.amazon.com/pt_br/opensearch-service/latest/developerguide/serverless-vector-search.html
+===================================================================================================================================
+Um engenheiro de ML quer aprimorar o desempenho de um grande modelo de linguagem (LLM) e, ao mesmo tempo, manter os custos reduzidos.
+
+Na lista a seguir, selecione e classifique as técnicas de aprimoramento de modelos do MAIS ao MENOS econômico. Cada técnica de aprimoramento de modelos deve ser selecionada uma única vez. (Selecione e ordene QUATRO.)
+
+Geração aumentada via recuperação (RAG)
+Engenharia de prompts
+Ajuste fino de adaptação de domínios
+Ajuste fino baseado em instruções
+
+1 - Engenharia de prompts
+2 - Geração aumentada via recuperação (RAG)
+3 - Ajuste fino baseado em instruções
+4 - Ajuste fino de adaptação de domínios
+
+R: A engenharia de prompts oferece técnicas que podem ser usadas para modificar e otimizar prompts, os quais são enviados a um LLM para aumentar a probabilidade de o LLM fornecer uma resposta de alta qualidade. Ela não requer infraestrutura adicional. Portanto, a engenharia de prompts é a abordagem mais econômica para melhorar a qualidade das respostas do LLM no curto prazo.
+
+A RAG inclui um modelo de incorporação e um banco de dados de vetores que podem executar pesquisas de similaridade de prompts incorporados em comparação às incorporações no banco de dados. A RAG pode oferecer um contexto valioso para um LLM com a finalidade de reduzir as probabilidades de alucinação do LLM e a falta de informações relevantes. Essa técnica tem custos adicionais para uso de um modelo incorporado e de um banco de dados de vetores. Portanto, ela não é tão econômica quanto a engenharia de prompts.
+
+O ajuste fino baseado em instruções usa dados rotulados para oferecer treinamento adicional ao LLM. Portanto, é uma técnica capaz de aprimorar a qualidade das respostas do LLM. A rotulagem de dados e o treinamento complementar exigem custos adicionais. Portanto, o ajuste fino baseado em instruções é menos econômico do que a implementação da RAG.
+
+O ajuste fino de adaptação de domínios oferece treinamento adicional ao LLM em um grande conjunto de dados não rotulados. Essa técnica envolve tempos de treinamento mais longos, maiores requisitos de volume de dados e vários parâmetros de modelo para atualização. Portanto, ela é menos econômica do que o ajuste fino baseado em instruções.
+
+Referencia:
+- https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/what-is-prompt-engineering.html
+- https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html
+- https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-fine-tuning-instruction-based.html
+- https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-fine-tuning-domain-adaptation.html
+===================================================================================================================================
+Uma empresa está criando uma aplicação de IA generativa para uma tarefa recorrente de resumo de documentos. A princípio, o modelo de base (FM) gerava resumos com formatos e qualidade inconsistentes. Um engenheiro de prompts está desenvolvendo um modelo de prompt para melhorar a consistência e a formatação.
+
+Qual solução melhorará a qualidade da saída?
+
+R: Correto. Técnicas eficazes de engenharia de prompts incluem prompts single shot ou few shot, os quais contêm um ou mais exemplos. Os FMs podem inferir o formato, o estilo e a relação entre as saídas e as entradas dos exemplos. Pode ser difícil ou ineficiente descrever essas informações no prompt. Incluir um ou mais resumos com curadoria que demonstrem a qualidade de saída desejada seria a solução mais adequada para melhorar a qualidade da saída gerada.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-customize-prompt-engineering.html
+===================================================================================================================================
+Uma escola quer usar um modelo de base (FM) para criar uma aplicação para ajudar os alunos a resolver problemas matemáticos em simulados. Para ajudar os alunos, a aplicação deve fornecer o raciocínio e a explicação passo a passo do motivo pelo qual uma resposta no simulado está certa ou errada.
+
+Qual técnica melhorará de maneira mais confiável o desempenho do FM?
+
+R: Correto. A cadeia de pensamento é uma técnica de engenharia de prompts que divide uma questão complexa em partes menores. A técnica de prompt de cadeia de pensamento é a recomendada quando há tarefas aritméticas e lógicas que exigem raciocínio. A cadeia de pensamento é a técnica de prompt mais confiável porque o modelo pode dividir a pergunta em uma série de etapas em vez de apenas fornecer a resposta.
+
+Referencia: https://aws.amazon.com/what-is/prompt-engineering/
+===================================================================================================================================
+Uma empresa regional de serviços públicos quer criar uma aplicação de IA generativa que enviará dicas personalizadas de economia de energia aos clientes. A empresa desenvolveu uma aplicação que cria um prompt com as entradas dos clientes em um modelo de prompt. As entradas dos clientes são limitadas a seleções de uma série de listas pré-preenchidas, como CEP, número de moradores e tópicos de interesse. A segurança dos sistemas da empresa e dos dados dos clientes é fundamental.
+
+Qual solução fornece o MAIOR benefício de segurança contra ataques de injeção de prompts?
+
+R: Correto. A engenharia de prompts pode melhorar a qualidade das respostas dos modelos de base (FMs). No entanto, com a técnica chamada injeção de prompts, os prompts podem ser modificados para causar danos. Essa técnica pode resultar na geração de conteúdo prejudicial, na divulgação de informações confidenciais ou na interrupção do sistema. É possível adicionar instruções ao modelo de prompt relacionadas à injeção de prompts. Por exemplo, você pode especificar como lidar com solicitações sobre tópicos não relacionados ou como identificar ataques comuns. Essas instruções adicionais podem reduzir o risco de ataques de injeção de prompts.
+
+Referencia: https://docs.aws.amazon.com/pt_br/prescriptive-guidance/latest/llm-prompt-engineering-best-practices/common-attacks.html
+===================================================================================================================================
+Qual é o objetivo principal do uso de modelos de prompt na engenharia de prompts?
+
+R: Correto. Os modelos de prompt são formatos predefinidos que podem ser usados para padronizar entradas e saídas de modelos de IA. Eles garantem consistência e aumentam o desempenho do modelo.
+
+Referencia: https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/prompt-templates-and-examples.html
+===================================================================================================================================
+Um engenheiro de ML quer um modelo de base (FM) que possa participar de um ambiente de chatbot multiturno.
+
+Qual solução atende a esses requisitos?
+
+R: Correto. O ajuste fino baseado em instruções é uma técnica de ajuste fino que usa dados rotulados para melhorar o desempenho do grande modelo de linguagem (LLM) em uma tarefa específica. É possível usar esse ajuste para ensinar um modelo a se comunicar com os usuários em um ambiente de chatbot multiturno.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-fine-tuning-instruction-based.html
+===================================================================================================================================
+Uma empresa global de comunicações está criando uma ferramenta assistida por IA para escalar os recursos de chat com clientes. Todas as respostas geradas pelo chat devem ser positivas, amistosas e imparciais.Qual abordagem de avaliação identificará os modelos de base (FMs) que atenderão a esses requisitos em grande escala?
+
+R: Correto. O SageMaker Clarify é um recurso do SageMaker que ajuda a explicar como um modelo faz previsões e se os conjuntos de dados ou modelos refletem vieses. O SageMaker Clarify também inclui uma biblioteca para avaliar o desempenho de FMs. A biblioteca de avaliação de modelos de base (FMEval) inclui ferramentas para comparar métricas de qualidade e responsabilidade dos FMs, como pontuações de viés e toxicidade. A FMEval pode usar conjuntos de dados de teste integrados, mas você pode fornecer um conjunto de dados de teste específico para seu caso de uso.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-foundation-model-evaluate.html
+===================================================================================================================================
+Qual métrica pode avaliar o desempenho do modelo de base (FM) no contexto de resumo de texto?
+
+
+R: Correto. ROUGE-N é uma métrica que pode avaliar a qualidade dos resumos de texto comparando sobreposições de n-gramas entre o resumo gerado e os resumos de referência. O ROUGE-N fornece uma medida abrangente da similaridade entre o resumo gerado e o resumo de referência.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-foundation-model-evaluate-overview.html
+===================================================================================================================================
+Uma empresa está desenvolvendo um modelo de ML para gerar as respostas em linguagem natural de um chatbot de atendimento ao cliente. O modelo precisa ser avaliado por sua capacidade de gerar respostas tão semelhantes quanto possível às respostas de especialistas (SMEs). A empresa tem um conjunto de dados de exemplos de perguntas e respostas que foram validados pelos SMEs.
+
+Qual métrica a empresa deve usar para avaliar o desempenho do modelo?
+
+R: Correto. BERTScore é uma métrica que pode ser usada para avaliar a qualidade do texto gerado por um modelo de linguagem de texto para texto. Ela mede a semelhança semântica entre o texto gerado e o de referência. Portanto, é possível usar a métrica BERTScore para avaliar a semelhança entre as respostas humanas e de chatbot.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-foundation-model-evaluate-overview.html
+===================================================================================================================================
+Uma empresa de serviços financeiros está desenvolvendo um modelo de ML que prevê a elegibilidade de empréstimo aos clientes. Ela quer uma solução capaz de identificar vieses nos dados de treinamento e nas previsões do modelo.
+
+Qual serviço da AWS atenderá a esses requisitos?
+
+R: Correto. O SageMaker Clarify é um serviço que pode detectar vieses nos dados de treinamento e modelar previsões. Você pode usar o SageMaker Clarify para fornecer informações sobre as decisões do modelo. Portanto, o SageMaker Clarify é uma solução adequada para desenvolver sistemas de IA responsáveis e imparciais.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-configure-processing-jobs.html
+===================================================================================================================================
+Uma empresa de serviços financeiros passou por uma expansão global recentemente e agora quer criar uma aplicação de chat assistida por IA para escalar a capacidade de atendimento ao cliente. A empresa está sujeita a vários regulamentos e frameworks de conformidade. Ela precisa incorporar princípios de IA responsável na solução.
+
+Quais abordagens se alinham aos princípios de IA responsável? (Selecione DUAS.)
+
+R: Correto. A privacidade e a segurança dos dados são um componente da IA responsável. Os dados dos clientes incluem informações de identificação pessoal (PII) que podem identificar uma pessoa. As políticas e regulamentações de privacidade da empresa exigem que as PII sejam protegidas. A edição de PII por meio da remoção ou ofuscação evita o risco de que as previsões do modelo vazem informações sobre os clientes no conjunto de dados de treinamento. Os modelos treinados em conjuntos de dados que contêm dados sigilosos, como PII, devem ser testados para garantir que esses dados não vazem na resposta.
+
+Referencia: https://docs.aws.amazon.com/pt_br/comprehend/latest/dg/pii.html
+
+R: Correto. A imparcialidade é um componente da IA responsável. No ML, os vieses incluem desequilíbrios nos dados baseados em grupos ou diferenças no desempenho do modelo entre os grupos. Em um sistema de ML, o viés pode provocar impactos negativos nos grupos afetados. Inicialmente, um modelo pode produzir previsões tendenciosas se os dados de treinamento contiverem desequilíbrios ou vieses de rotulagem entre grupos. Além disso, o desempenho do modelo pode variar com o tempo se os dados de treinamento não forem mais representativos do conjunto de dados de produção. O desvio pode ocorrer devido a mudanças temporárias ou permanentes na base de clientes ou nos comportamentos dos clientes.
+
+Referencia:
+- https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-model-monitor-bias-drift.html
+- https://aws.amazon.com/pt/ai/responsible-ai/
+===================================================================================================================================
+Um especialista em IA está treinando um modelo de ML de regressão e observando o viés e a variância durante o treinamento.
+
+Qual padrão de viés e variância resultará no sobreajuste do modelo?
+
+R: Correto. O baixo viés indica que o modelo não está fazendo suposições errôneas sobre os dados de treinamento. A alta variância indica que o modelo está prestando atenção ao ruído nos dados de treinamento e está se sobreajustando.
+
+Referencia: https://aws.amazon.com/what-is/overfitting/
+===================================================================================================================================
+Na lista a seguir, selecione o conceito de IA correto para cada descrição. Cada conceito de IA deve ser selecionado uma única vez. (Selecione CINCO.)
+
+Viés
+Imparcialidade
+Sobreajuste
+Subajuste
+Explicabilidade
+Quando um modelo tem um bom desempenho no treinamento de dados mas não consegue fazer generalizações para novos dados.
+- Sobreajuste
+- Explicabilidade
+- Viés
+- Subajuste
+- Imparcialidade
+
+
+R: Viés é um conceito em IA e ML que pode gerar resultados menos precisos ou parciais e tendenciosos. O viés ocorre principalmente quando os dados de treinamento não são representativos da população geral ou de grupos específicos. Ele pode ocorrer no estágio de coleta de dados, devido à forma como os algoritmos são treinados, ou na interpretação dos resultados.
+
+Imparcialidade é um conceito que exige que os algoritmos sejam desenvolvidos de uma maneira que não discrimine determinados grupos. O objetivo da imparcialidade é garantir que um modelo seja consistente em todos os grupos demográficos.
+
+Explicabilidade refere-se ao grau com que o funcionamento interno de um sistema de ML ou IA pode ser compreendido e explicado por humanos. Ela é um aspecto fundamental da IA responsável para garantir que você compreenda os modelos e como eles chegam às previsões.
+
+O sobreajuste ocorre quando um modelo de ML aprende o padrão subjacente dos dados e dos ruídos. Quando um modelo está sobreajustado, ele consegue ter um bom desempenho, mas tem dificuldade para fazer generalizações em dados novos ou não vistos.
+
+O subajuste ocorre quando um modelo é muito básico para capturar a tendência subjacente dos dados ou quando o modelo não consegue se ajustar bem aos dados de treinamento. Isso normalmente ocorre quando o modelo não tem a complexidade necessária para aprender com os conjuntos de dados, possivelmente por não ter parâmetros suficientes.
+
+Referencia:
+- https://aws.amazon.com/pt/ai/responsible-ai/resources/
+- https://aws.amazon.com/what-is/overfitting/
+===================================================================================================================================
+Uma empresa aplica um design centrado no ser humano em sua aplicação de IA usando o aprendizado por reforço com feedback humano (RLHF). Para melhorar um grande modelo de linguagem (LLM) que ela está desenvolvendo, a empresa quer criar um conjunto de dados de treinamento confiável incorporando feedback humano.
+
+Qual solução atende a esses requisitos?
+
+R: Correto. O SageMaker Ground Truth usa feedback humano para criar conjuntos de dados rotulados. Ao incorporar rótulos verificados por humanos e supervisão humana, o SageMaker Ground Truth ajuda a alinhar mais estreitamente o processo de tomada de decisão da IA aos contextos do mundo real. Portanto, é possível usar esse serviço para criar um conjunto de dados de treinamento confiável a fim de melhorar um LLM incorporando feedback humano.
+
+Referencia:
+- https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/sms.html
+- https://aws.amazon.com/what-is/reinforcement-learning-from-human-feedback/
+===================================================================================================================================
+Uma empresa está explorando soluções de design centradas no ser humano para um modelo de ML que ela está desenvolvendo.
+
+Quais soluções fazem parte do design de aprendizado por reforço com feedback humano (RLHF)? (Selecione DUAS.)
+
+R: Correto. RLHF é uma técnica de ML que incorpora feedback humano para ajudar os modelos a aprender com maior eficiência. O ajuste fino supervisionado de um modelo de linguagem faz parte do processo de RLHF. É possível usar o ajuste fino supervisionado para aprimorar e ajustar ainda mais um modelo de linguagem de base.
+
+Referencia: https://aws.amazon.com/what-is/reinforcement-learning-from-human-feedback/
+
+R: Correto. RLHF é uma técnica de ML que incorpora feedback humano para ajudar os modelos a aprender com maior eficiência. Usar um modelo de recompensas faz parte do processo de RLHF. É possível criar seu próprio modelo de recompensas ou usar um que já tenha sido criado. Os humanos fornecem prompts e escrevem respostas que correspondem a diferentes valores de recompensa. Depois, você treina um modelo de recompensas para prever o valor da recompensa de acordo com o prompt e a resposta. Com o RLHF, o objetivo é treinar um modelo de recompensas de IA separado com base em feedback humano. Em seguida, você usa o modelo como uma função de recompensa para otimizar a política por meio do aprendizado por reforço.
+
+Referencia: https://aws.amazon.com/what-is/reinforcement-learning-from-human-feedback/
+===================================================================================================================================
+Uma empresa precisa fornecer informações sobre seus modelos de ML personalizados para fins de auditoria. As informações precisam incluir detalhes sobre o treinamento e o desempenho do modelo.
+
+Qual serviço ou recurso da AWS atende a esse requisito?
+
+R: Correto. Os SageMaker Model Cards podem ser usados para registrar informações sobre modelos de ML. Esse recurso inclui informações como detalhes do treinamento, métricas de avaliação e desempenho do modelo.
+
+Referencia: https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/model-cards.html
+===================================================================================================================================
+Uma empresa de comércio eletrônico pretende implantar um sistema de recomendação de IA que usa dados de clientes. Os dados são armazenados no Amazon S3. A empresa deseja cumprir os regulamentos de governança e privacidade de dados para identificar e proteger informações de identificação pessoal (PII).
+
+Qual serviço da AWS atenderá a esses requisitos?
+
+R: Correto. O Macie usa ML para descobrir, monitorar e proteger dados sigilosos armazenados no Amazon S3. Você pode usar o Macie para monitorar a postura de segurança do bucket do S3. Você pode usar o Macie para identificar e proteger PII. Você pode usar o Macie para cumprir os regulamentos de governança e privacidade de dados.
+
+Referencia: https://docs.aws.amazon.com/pt_br/macie/latest/user/what-is-macie.html
+===================================================================================================================================
+Uma empresa de saúde deve cumprir uma política de conformidade. A política estabelece que os dados armazenados no Amazon S3 não devem atravessar a internet ao serem transferidos a uma instância de ML do Amazon EC2 para fins de treinamento de modelos.
+
+Qual solução atende a esses requisitos?
+
+R: Correto. Um endpoint de gateway fornece uma conexão segura entre uma VPC e o Amazon S3 ou o Amazon DynamoDB. Um endpoint de gateway do S3 fornece conectividade com o Amazon S3 por meio de uma VPC. É possível implantar uma instância do EC2 de ML de dentro da VPC para treinamento do modelo. Essa solução garante que os dados transferidos entre as instâncias do EC2 e o Amazon S3 permaneçam na rede da AWS e não atravessem a internet.
+
+Referencia: https://docs.aws.amazon.com/pt_br/vpc/latest/privatelink/vpc-endpoints-s3.html
+===================================================================================================================================
+Uma empresa de rede social percebe um aumento no número de tipos de conteúdo criativo enviados à sua plataforma. Os tipos de conteúdo criativo incluem desenhos animados, animações e desenhos. A empresa quer realizar a moderação dos tipos de conteúdo criativo.
+
+Qual solução atende a esses requisitos pelo MENOR custo operacional indireto?
+
+R: Correto. O Amazon Rekognition é um serviço de IA totalmente gerenciado para análise de imagens e vídeos. É possível usá-lo para identificar conteúdo impróprio em imagens, incluindo desenhos, pinturas e animações. O Amazon Rekognition foi desenvolvido especificamente para esse tipo de caso de uso. Além disso, é possível acessá-lo diretamente por uma API. Portanto, o Amazon Rekognition exige o menor custo operacional indireto.
+
+Referencia: https://docs.aws.amazon.com/pt_br/rekognition/latest/dg/moderation.html
+===================================================================================================================================
+Uma empresa hospeda vários aplicativos web em instâncias do Amazon EC2. Os aplicativos web precisam fazer chamadas para modelos de base (FMs) no Amazon Bedrock. Para fins de auditoria, a empresa quer usar um mecanismo que registre automaticamente todas as chamadas feitas pelos aplicativos web para o Amazon Bedrock. O mecanismo deve capturar o usuário e o perfil para cada chamada de API e os timestamps das chamadas de inferência.
+
+Qual serviço da AWS atenderá a esses requisitos?
+
+R: Correto. O CloudTrail fornece auditoria de risco ao capturar chamadas de API feitas aos serviços da AWS. Você pode configurar o CloudTrail para armazenar automaticamente todas as chamadas de API feitas por aplicativos web para o Amazon Bedrock. Essa solução fornecerá uma trilha de auditoria de quais aplicativos web invocaram quais FMs no Amazon Bedrock, incluindo os timestamps relevantes.
+
+Referencia:
+- https://docs.aws.amazon.com/pt_br/awscloudtrail/latest/userguide/cloudtrail-user-guide.html
+- https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/logging-using-cloudtrail.html
+===================================================================================================================================
+Uma empresa tem usuários que desenvolvem modelos de ML no Amazon SageMaker Canvas. Depois de serem desenvolvidos, os modelos precisam ser revisados e aprovados por uma equipe de data scientists que operam no SageMaker Studio.
+
+Qual serviço da AWS pode fornecer aos data scientists acesso aos modelos de ML pelo MENOR custo operacional indireto?
+
+R: Correto. O SageMaker Model Registry é um catálogo totalmente gerenciado para modelos de ML. Ele pode ser usado para gerenciar versões de modelos, associar metadados a modelos e gerenciar o status de aprovação do modelo. É possível usar o SageMaker Canvas para enviar modelos criados ao SageMaker Model Registry. Assim, os usuários do SageMaker Studio podem acessar o mesmo SageMaker Model Registry e os modelos no registro. Essa solução exige o menor custo operacional indireto, pois a empresa precisa apenas registrar os modelos para implementar o fluxo de trabalho.
+
+Referencia:
+- https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/model-registry.html
+- https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/canvas-register-model.html
+===================================================================================================================================
+Uma empresa hospeda seus modelos de ML na AWS. Ela precisa de documentos sobre segurança e conformidade na AWS.
+
+Qual serviço da AWS atende a esses requisitos?
+
+R: Correto. O AWS Artifact é um recurso de auditoria que concede acesso sob demanda à documentação de segurança e conformidade da nuvem AWS.
+
+Referencia: https://docs.aws.amazon.com/pt_br/artifact/latest/ug/what-is-aws-artifact.html
