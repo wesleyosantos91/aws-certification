@@ -49,7 +49,7 @@
 
     **R:**
     - Usar soluções de RAG (Recuperação Aumentada) para enriquecer o prompt com informações confiáveis.  
-    - Criar prompts claros com instruções precisas.
+    - Criar prompts claros com instruções precisas.  
     **Referência:**
     - [AWS - RAG](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html)
     - [AWS - Engenharia de prompts](https://aws.amazon.com/what-is/prompt-engineering/)
