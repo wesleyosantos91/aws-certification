@@ -3,13 +3,11 @@
 1. **Qual é o objetivo principal da IA generativa?**
 
     **R:** A IA generativa é um tipo de IA que visa criar conteúdo, como imagens, textos, músicas ou conversas.
-
     **Referência:** [AWS - IA generativa](https://aws.amazon.com/what-is/generative-ai/)
 
 2. **Qual estágio do pipeline de desenvolvimento de modelos concentra-se na avaliação do desempenho do modelo?**
 
     **R:** Na avaliação do modelo, é necessário determinar quão bem um modelo atinge os respectivos objetivos testando o desempenho, o viés e as explicações antes da implantação.
-
     **Referência:** [AWS Well-Architected Framework](https://docs.aws.amazon.com/pt_br/wellarchitected/latest/machine-learning-lens/model-evaluation.html)
 
 3. **Quais fatores podem afetar a latência da invocação de um grande modelo de linguagem (LLM)? (Selecione DUAS.)**
@@ -17,20 +15,17 @@
     **R:**
     - O número de tokens no prompt de entrada afeta a latência da invocação do LLM.
     - O número de tokens na resposta afeta a latência da invocação do LLM.
-
     **Referência:** [AWS - Latência em LLMs](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/inference.html)
 
 4. **Um especialista em IA está treinando um modelo de ML de regressão e observando o viés e a variância durante o treinamento. Qual padrão de viés e variância resultará no sobreajuste do modelo?**
 
     **R:** O baixo viés indica que o modelo não está fazendo suposições errôneas sobre os dados de  treinamento. A alta variância indica que o modelo está prestando atenção ao ruído nos dados de   treinamento e está se sobreajustando.
-
     **Referência:** [AWS - Overfitting](https://aws.amazon.com/what-is/overfitting/)
 
 5. **Quais são as desvantagens ou limitações de trabalhar com a IA generativa? (Selecione DUAS.)**
 
     **R:** A alucinação ocorre quando um grande modelo de linguagem (LLM) gera informações falsas.
     Os LLMs são pré-treinados em conjuntos de dados estáticos, resultando em uma limitação de dados.
-
     **Referência:**
     - AWS - [Alucinações na IA generativa](https://docs.aws.amazon.com/pt_br/amazonq/latest/qbusiness-ug/concepts-terms.html)
     - AWS - [RAG e limitação de dados](https://aws.amazon.com/what-is/retrieval-augmented-generation/)
@@ -38,19 +33,16 @@
 6. **Qual métrica pode avaliar o desempenho do modelo de base (FM) no contexto de resumo de texto?**
 
     **R:** ROUGE-N é uma métrica que pode avaliar a qualidade dos resumos de texto comparando sobreposições de n-gramas entre o resumo gerado e os resumos de referência.
-
     **Referência:** [AWS - Métricas de resumo](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-foundation-model-evaluate-overview.html)
 
 7. **Qual técnica melhorará de maneira mais confiável o desempenho do FM para resolver problemas matemáticos passo a passo?**
 
     **R:** A técnica de "cadeia de pensamento" (Chain of Thought) divide uma questão complexa em partes menores, permitindo ao modelo raciocinar e fornecer explicações claras.
-
     **Referência:** [AWS - Cadeia de pensamento](https://aws.amazon.com/what-is/prompt-engineering/)
 
 8. **Um desenvolvedor precisa de uma solução para criar um assistente virtual baseado em linguagem natural. Qual serviço da AWS atenderá a esses requisitos?**
 
     **R:** O Amazon Lex é um serviço gerenciado que pode ser usado para criar bots usando IA conversacional.
-
     **Referência:** [AWS - Amazon Lex](https://docs.aws.amazon.com/pt_br/lexv2/latest/dg/what-is.html)
 
 9. **Qual técnica ajuda a mitigar alucinações em grandes modelos de linguagem (LLM)? (Selecione DUAS.)**
@@ -58,7 +50,6 @@
     **R:**
     - Usar soluções de RAG (Recuperação Aumentada) para enriquecer o prompt com informações confiáveis.
     - Criar prompts claros com instruções precisas.
-
     **Referência:**
     - [AWS - RAG](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html)
     - [AWS - Engenharia de prompts](https://aws.amazon.com/what-is/prompt-engineering/)
@@ -66,13 +57,11 @@
 10. **Qual é o propósito de usar incorporações em um modelo de geração de texto?**
 
     **R:** As incorporações são representações vetoriais que capturam relações semânticas, permitindo   ao modelo entender e gerar textos coerentes.
-
     **Referência:** [AWS - Incorporações em IA](https://aws.amazon.com/what-is/transformers-in-artificial-intelligence/)
 
 11. **Qual métrica a empresa deve usar para avaliar um modelo de chatbot baseado em semelhança com especialistas humanos?**
 
     **R:** BERTScore mede a similaridade semântica entre respostas geradas e respostas de referência.
-
     **Referência:** [AWS - Métricas de avaliação](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-foundation-model-evaluate-overview.html)
 
 12. **Quais estratégias fazem parte do design centrado no ser humano para IA usando RLHF? (Selecione DUAS.)**
@@ -80,25 +69,21 @@
     **R:**
     - Ajuste fino supervisionado de modelos de linguagem.
     - Uso de modelos de recompensas baseados em feedback humano.
-
     **Referência:** [AWS - RLHF](https://aws.amazon.com/what-is/reinforcement-learning-from-human-feedback/)
 
 13. **Um engenheiro de ML quer aprimorar o desempenho de um LLM com o menor custo. Qual técnica deve ser priorizada?**
 
     **R:** A engenharia de prompts é a técnica mais econômica, pois não requer infraestrutura adicional     e ajusta a entrada para melhorar as respostas.
-
     **Referência:** [AWS - Engenharia de prompts](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/what-is-prompt-engineering.html)
 
 14. **Uma empresa quer treinar um modelo de IA que minimiza alucinações com base em sua própria documentação. Qual solução atende a esses requisitos?**
 
     **R:** RAG (Recuperação Aumentada) reduz alucinações ao enriquecer os prompts com informações   específicas e confiáveis da empresa.
-
     **Referência:** [AWS - RAG](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html)
 
 15. **Qual é o objetivo principal de um modelo de prompt na engenharia de prompts?**
 
     **R:** Os modelos de prompt padronizam entradas e saídas de IA, garantindo consistência e   melhorando o desempenho do modelo.
-
     **Referência:** [AWS - Modelos de prompt](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/prompt-templates-and-examples.html)
 
 # Domínio 2: Fundamentos de IA generativa
@@ -179,4 +164,96 @@
 
 15. **Qual métrica pode avaliar o desempenho de um FM no contexto de resumo de texto?**  
     **R:** ROUGE-N avalia a qualidade dos resumos ao comparar sobreposições de n-gramas entre o resumo gerado e os resumos de referência.  
-    **Referência:** [AWS - Evaluate Foundation Models](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-foundation-model-evaluate-overview.html) 
+    **Referência:** [AWS - Evaluate Foundation Models](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-foundation-model-evaluate-overview.html)
+
+ # Domínio 3: Aplicações de modelos de base
+
+### Perguntas e Respostas - Domínio 3
+
+1. **Qual é o objetivo principal da IA generativa?**  
+   **R:** Criar conteúdo, como imagens, textos, músicas ou conversas.  
+   **Referência:** [AWS Generative AI](https://aws.amazon.com/what-is/generative-ai/)
+
+2. **Uma empresa quer usar um LLM para aprender a linguagem específica de seu domínio. Qual solução atende a esses requisitos pelo menor custo operacional indireto?**  
+   **R:** Pré-treinamento contínuo melhora o desempenho do modelo ao fornecer dados não rotulados para aprendizado de um domínio específico.  
+   **Referência:** [AWS Bedrock Custom Models](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/custom-models.html)
+
+3. **Qual técnica de ML pode ajudar uma empresa a incorporar terminologia específica do setor?**  
+   **R:** Pré-treinamento contínuo de FMs usando grandes conjuntos de dados não rotulados do setor.  
+   **Referência:** [AWS Bedrock Custom Models](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/custom-models.html)
+
+4. **Qual é o propósito de usar incorporações nesse contexto?**  
+   **R:** Representações vetoriais capturam relações semânticas, permitindo que o modelo entenda e gere textos coerentes e significativos.  
+   **Referência:** [Transformers na AI](https://aws.amazon.com/what-is/transformers-in-artificial-intelligence/)
+
+5. **Qual é a saída de um modelo de incorporação invocado com uma frase?**  
+   **R:** Uma matriz de valores numéricos.  
+   **Referência:**  
+   - [Titan MultiEmb Models](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/titan-multiemb-models.html)  
+   - [Embeddings em ML](https://aws.amazon.com/what-is/embeddings-in-machine-learning/)
+
+6. **Qual métrica pode avaliar o desempenho do modelo de base (FM) no contexto de resumo de texto?**  
+   **R:** ROUGE-N, que avalia a qualidade do texto comparando n-gramas do resumo gerado com o de referência.  
+   **Referência:** [AWS SageMaker Evaluate Overview](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-foundation-model-evaluate-overview.html)
+
+7. **Qual métrica deve ser usada para avaliar respostas de um chatbot em relação a especialistas?**  
+   **R:** BERTScore, que mede a similaridade semântica entre textos.  
+   **Referência:** [AWS SageMaker Evaluate Overview](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/clarify-foundation-model-evaluate-overview.html)
+
+8. **Quais fatores podem afetar a latência da invocação de um grande modelo de linguagem (LLM)?**  
+   **R:**  
+   - O número de tokens no prompt de entrada.  
+   - O número de tokens gerados na saída.  
+   **Referência:** [AWS Bedrock Inference](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/inference.html)
+
+9. **Qual técnica melhorará o desempenho de um FM em problemas matemáticos com explicações passo a passo?**  
+   **R:** A técnica de cadeia de pensamento (chain of thought), que divide questões complexas em partes menores.  
+   **Referência:** [Prompt Engineering](https://aws.amazon.com/what-is/prompt-engineering/)
+
+10. **Qual solução fornece o maior benefício de segurança contra ataques de injeção de prompts?**  
+    **R:** Adicionar instruções ao modelo de prompt relacionadas à injeção de prompts.  
+    **Referência:** [LLM Prompt Engineering Best Practices](https://docs.aws.amazon.com/pt_br/prescriptive-guidance/latest/llm-prompt-engineering-best-practices/common-attacks.html)
+
+11. **Qual é o objetivo principal do uso de modelos de prompt na engenharia de prompts?**  
+    **R:** Garantir consistência e aumentar o desempenho por meio de formatos predefinidos.  
+    **Referência:** [Prompt Templates](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/prompt-templates-and-examples.html)
+
+12. **Qual técnica aprimorará o formato das respostas de FM da forma mais econômica?**  
+    **R:** Engenharia de prompts, que não exige recursos adicionais.  
+    **Referência:** [Prompt Engineering](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/what-is-prompt-engineering.html)
+
+13. **Quais estratégias ajudam a mitigar alucinações nas respostas de LLMs?**  
+    **R:**  
+    - Uso de RAG (Geração Aumentada por Recuperação).  
+    - Criação de prompts claros e assertivos.  
+    **Referência:**  
+    - [SageMaker RAG](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html)  
+    - [Prompt Engineering](https://aws.amazon.com/what-is/prompt-engineering/)
+
+14. **Qual técnica pode melhorar a qualidade de saídas inconsistentes de um modelo de base?**  
+    **R:** Prompts "single-shot" ou "few-shot", que contêm exemplos curados de alta qualidade.  
+    **Referência:** [Prompt Engineering](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-customize-prompt-engineering.html)
+
+15. **Qual serviço AWS pode ser usado para criar uma aplicação que resuma documentos PDF sem exigir codificação?**  
+    **R:** SageMaker Canvas.  
+    **Referência:**  
+    - [SageMaker Ready-to-Use Models](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/canvas-ready-to-use-models.html)  
+    - [SageMaker FM Chat](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/canvas-fm-chat.html)
+
+16. **Qual é a primeira etapa ao usar o Amazon Bedrock para criar rascunhos de documentos?**  
+    **R:** Selecionar o modelo de base (FM) mais adequado para a geração de texto.  
+    **Referência:** [Bedrock Key Definitions](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/key-definitions.html)
+
+17. **Qual técnica classifica as melhorias no FM do mais ao menos econômico?**  
+    **R:**  
+    1. Engenharia de prompts.  
+    2. Geração aumentada via recuperação (RAG).  
+    3. Ajuste fino baseado em instruções.  
+    4. Ajuste fino de adaptação de domínios.  
+    **Referência:**  
+    - [Prompt Engineering](https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/what-is-prompt-engineering.html)  
+    - [SageMaker RAG](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html)
+
+18. **Qual serviço AWS é mais indicado para criar um chatbot multiturno?**  
+    **R:** Ajuste fino baseado em instruções no SageMaker JumpStart.  
+    **Referência:** [SageMaker JumpStart](https://docs.aws.amazon.com/pt_br/sagemaker/latest/dg/jumpstart-foundation-models-fine-tuning-instruction-based.html)
