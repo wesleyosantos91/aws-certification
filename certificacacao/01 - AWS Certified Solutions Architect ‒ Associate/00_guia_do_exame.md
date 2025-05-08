@@ -20,14 +20,14 @@ Este guia é baseado no conteúdo oficial do exame SAA-C03 e está estruturado p
   - [ ] Políticas de ciclo de vida de dados
 
 ## Domínio 2: Design de Arquiteturas Resilientes (26%)
-- [ ] **2.1** Projetar arquiteturas dimensionáveis e com acoplamento fraco
-  - [ ] Estratégias de microsserviços, eventos e escalabilidade
-  - [ ] Balanceamento de carga, APIs e enfileiramento
-  - [ ] Uso de contêineres e arquiteturas sem servidor
-- [ ] **2.2** Projetar arquiteturas altamente disponíveis e tolerantes a falhas
-  - [ ] Estratégias de DR (RPO, RTO, failover)
-  - [ ] Padrões distribuídos e alta disponibilidade
-  - [ ] Durabilidade e backup de dados
+- [x] **2.1** Projetar arquiteturas dimensionáveis e com acoplamento fraco
+  - [x] Estratégias de microsserviços, eventos e escalabilidade
+  - [x] Balanceamento de carga, APIs e enfileiramento
+  - [x] Uso de contêineres e arquiteturas sem servidor
+- [x] **2.2** Projetar arquiteturas altamente disponíveis e tolerantes a falhas
+  - [x] Estratégias de DR (RPO, RTO, failover)
+  - [x] Padrões distribuídos e alta disponibilidade
+  - [x] Durabilidade e backup de dados
 
 ## Domínio 3: Design de Arquiteturas de Alta Performance (24%)
 - [ ] **3.1** Determinar soluções de armazenamento de alto desempenho
