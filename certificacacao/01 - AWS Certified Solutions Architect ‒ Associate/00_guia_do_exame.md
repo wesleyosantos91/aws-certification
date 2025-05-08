@@ -19,7 +19,7 @@ Este guia é baseado no conteúdo oficial do exame SAA-C03 e está estruturado p
   - [ ] Criptografia de dados em repouso e em trânsito
   - [ ] Políticas de ciclo de vida de dados
 
-## Domínio 2: Design de Arquiteturas Resilientes (26%)
+## [Domínio 2: Design de Arquiteturas Resilientes (26%)](02_dominio_design_de_arquitetura_resilientes.md)
 - [x] **2.1** Projetar arquiteturas dimensionáveis e com acoplamento fraco
   - [x] Estratégias de microsserviços, eventos e escalabilidade
   - [x] Balanceamento de carga, APIs e enfileiramento
